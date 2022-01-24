@@ -1,0 +1,23 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: nacos-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        # 命名空間id，用於隔離環境
+        namespace: 198c1d5d-043f-409e-9bda-bac6279ee76f
+      # 配置config
+      config:
+        server-addr: localhost:8848
+        # 文件格式
+        file-extension: yaml
+        # groupName
+        group: dev
+        namespace: 198c1d5d-043f-409e-9bda-bac6279ee76f
+  # 在nacos配置処添加配置，文件名稱(dataId)為
+  # ${application-name}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+  profiles:
+    active: dev

@@ -1,0 +1,12 @@
+*.idea
+
+*.log
+
+/logs/
+
+*.iml
+
+*.class
+
+*/target/
+

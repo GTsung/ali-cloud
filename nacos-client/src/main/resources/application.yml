@@ -1,0 +1,20 @@
+#server:
+#  port: 8001
+#spring:
+#  application:
+#    name: nacos-client
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#        # 命名空間id，用於隔離環境
+#        namespace: 198c1d5d-043f-409e-9bda-bac6279ee76f
+#management:
+#  endpoint:
+#    health:
+#      show-details: always
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+
