@@ -25,3 +25,9 @@ spring:
     # ${application-name}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
   profiles:
     active: dev
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
