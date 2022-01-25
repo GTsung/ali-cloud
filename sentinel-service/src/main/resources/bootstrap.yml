@@ -7,7 +7,7 @@ spring:
     sentinel:
       transport:
         port: 8719 # 與sentinelDashboard交互的httpServer端口
-        dashboard: localhost:8080
+        dashboard: localhost:8858
     nacos:
       discovery:
         server-addr: localhost:8848
